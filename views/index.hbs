@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/site.css" />
+        <title>Memo Box</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="banner"></div>
+            <div id="memos">
+                <form action="/add" name="addNote" method="post">
+                <div class="memo">
+                    <div class="delBtn" style="background-image: url('/images/addbtn.png')" onclick="document.forms['addNote'].submit();"></div>
+                    <div class="memobody">
+                        <div class="title">
+                            <input id="inTitle" name="title" type="text"/>
+                        </div>
+                        <div class="content">
+                            <textarea id="inContent" name="content" value="content"></textarea>
+                        </div>
+                        <div style="font-size: 14px; margin-top: -20px; margin-left: 5px;">Color! Enter a 6-digit hexadecimal number.</div>
+                        <input id="colorArea" name="color" type="text" maxlength="6" onkeyup="this.value=this.value.replace(/[^0-9a-f]/g,'')" />
+                    </div>
+                </div>
+                </form>
+                {{#each memo}}
+                <div class="memo">
+                    <a href="/delete/{{id}}"><div class="delBtn"></div></a>
+                    <div class="memobody" style="background-color: #{{color}}">
+                        <div class="title">{{title}}</div>
+                        <div class="content">{{content}}</div>
+                        <div class="date">{{date}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </body>
+</html>
