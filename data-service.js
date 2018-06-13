@@ -1,3 +1,7 @@
+/*
+Aikebaier Aierkn
+*/
+
 const mongoose = require('mongoose');
 var url = "mongodb://admin:123456a@ds255930.mlab.com:55930/assignment";
 var Schema = mongoose.Schema;
