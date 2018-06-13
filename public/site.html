@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/site.css" />
+        <title>Memo Box</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="banner"></div>
+            <div id="memos">
+                <form action="/add" name="addNote" method="post">
+                <div class="memo">
+                    <div class="delBtn" style="background-image: url('/images/addbtn.png')" onclick="document.forms['addNote'].submit();"></div>
+                    <div class="memobody">
+                        <div class="title">
+                            <input id="inTitle" name="title" type="text"/>
+                        </div>
+                        <div class="content">
+                            <textarea id="inContent" name="content" value="content"></textarea>
+                        </div>
+                        <div style="font-size: 14px; margin-top: -20px; margin-left: 5px;">Color! Enter a 6-digit hexadecimal number.</div>
+                        <input id="colorArea" name="color" type="text" maxlength="6" onkeyup="this.value=this.value.replace(/[^0-9a-f]/g,'')" />
+                    </div>
+                </div>
+                </form>
+                <div class="memo">
+                    <a href="/delete/5b217e1000748700141fbda6"><div class="delBtn"></div></a>
+                    <div class="memobody" style="background-color: #">
+                        <div class="title"></div>
+                        <div class="content"></div>
+                        <div class="date">2018-06-13 20:26:56</div>
+                    </div>
+                </div>
+                <div class="memo">
+                    <a href="/delete/5b213d8d9d97c20014f56935"><div class="delBtn"></div></a>
+                    <div class="memobody" style="background-color: #">
+                        <div class="title"></div>
+                        <div class="content"></div>
+                        <div class="date">2018-06-13 15:51:41</div>
+                    </div>
+                </div>
+                <div class="memo">
+                    <a href="/delete/5b210b84294ead0014317597"><div class="delBtn"></div></a>
+                    <div class="memobody" style="background-color: #ce6b0a">
+                        <div class="title">do homework</div>
+                        <div class="content">math 9:00pm</div>
+                        <div class="date">2018-06-13 12:18:12</div>
+                    </div>
+                </div>
+                <div class="memo">
+                    <a href="/delete/5b210b46294ead0014317595"><div class="delBtn"></div></a>
+                    <div class="memobody" style="background-color: #2ed739">
+                        <div class="title">go home</div>
+                        <div class="content">take a key</div>
+                        <div class="date">2018-06-13 12:17:10</div>
+                    </div>
+                </div>
+                <div class="memo">
+                    <a href="/delete/5b210b2e294ead0014317594"><div class="delBtn"></div></a>
+                    <div class="memobody" style="background-color: #fac321">
+                        <div class="title">moring</div>
+                        <div class="content">go to school 7:00</div>
+                        <div class="date">2018-06-13 12:16:46</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

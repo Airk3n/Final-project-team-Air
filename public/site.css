@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(155, 171, 221);
+}
+#main {
+    margin: auto auto;
+    width: 900px;
+}
+#banner {
+    margin-left: 150px;
+    width: 600px;
+    height: 200px;
+    background-image: url("../images/banner.png");
+    background-size: 600px 200px;
+}
+#memos {
+    width: 900px;
+    margin: 10px;
+}
+.memo {
+    float: left;
+    width: 280px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-image: url("../images/body.png");
+    background-size: 280px 400px;
+}
+.memobody {
+    position: relative;
+    z-index: -1;
+    margin-top: 110px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    width: 256px;
+    height: 274px;
+
+}
+.title {
+    padding-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+}
+.content {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 240px;
+    height: 190px;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+.date {
+    font-size: 14px;
+    padding-left: 120px;
+}
+.delBtn {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-left: 235px; 
+    margin-top: 70px;
+    background-image: url("../images/delbtn.png");
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+#inTitle {
+    width: 180px;
+    height: 20px;
+    margin-left: 10px;
+}
+#inContent {
+    width: 180px;
+    height: 150px;
+    margin-left: 30px;
+}
+#colorArea {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 150px;
+    width: 50px;
+}
